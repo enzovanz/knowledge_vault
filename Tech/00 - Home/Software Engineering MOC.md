@@ -16,12 +16,31 @@ _No notes yet._
 
 Work from top to bottom and focus on only the first two or three unchecked topics.
 
+### Build and CI concept map
+
+This chain connects the transformation of source code to its automated validation:
+
+```text
+Compilation and linking
+        ↓ can be part of
+Software build process
+        ↓ coordinated by
+Software build automation
+        ↓ implemented by
+Make and Makefiles
+        ↓ may be invoked by
+Continuous integration
+        ↓ platform example
+CircleCI
+```
+
 ### Foundations
 
 - [ ] Software development lifecycle
 - [ ] Abstraction and modularity
 - [ ] Cohesion and coupling
 - [ ] Interfaces and contracts
+- [ ] [[Compilation and linking]]
 - [ ] [[Software build process]]
 - [ ] Testing fundamentals
 - [ ] [[Unit tests vs integration tests]]
@@ -34,7 +53,10 @@ Work from top to bottom and focus on only the first two or three unchecked topic
 - [ ] [[Orthogonality in software design]]
 - [ ] [[Law of Demeter]]
 - [ ] [[Application architecture models]]
-- [ ] [[Makefiles and build automation]]
+- [ ] [[Software build automation]]
+- [ ] [[Make and Makefiles]]
+- [ ] [[Continuous integration]]
+- [ ] [[CircleCI]]
 - [ ] Dependency management
 - [ ] Design patterns
 

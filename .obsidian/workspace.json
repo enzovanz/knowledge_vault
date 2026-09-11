@@ -4,17 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "f68b21f2805ab4e9",
+        "id": "06519684fb92f96a",
         "type": "tabs",
         "children": [
           {
-            "id": "bc4d257008944c4c",
+            "id": "459ff72a6969e998",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "00 - Home/Enzo Knowledge Base.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Enzo Knowledge Base"
             }
           }
         ]
@@ -181,43 +186,43 @@
       "bases:Create new base": false
     }
   },
-  "active": "bf68492a9f6c885a",
+  "active": "459ff72a6969e998",
   "lastOpenFiles": [
-    "Tech/90 - Resources/The Pragmatic Programmer.md",
-    "Social Sciences/00 - Home/Economics MOC.md",
-    "Untitled.md",
-    "100 - Resource Inbox/The Undercover Economist.md",
-    "100 - Resource Inbox",
-    "99 - Inbox/Untitled.md",
-    "Tech/90 - Resources/Code - The Hidden Language of Computer Hardware and Software.md",
-    "Tech/90 - Resources/Fundamentals of Data Engineering - Plan and Build Robust Data Systems.md",
-    "98 - Templates/Resource Template.md",
-    "99 - Concept Inbox/Marginal Land or Asset.md",
-    "99 - Concept Inbox/Scarcity.md",
-    "99 - Concept Inbox/Metacognitive Awareness.md",
-    "99 - Concept Inbox/Design Patterns.md",
-    "99 - Concept Inbox/Blackboard architectural pattern.md",
-    "99 - Concept Inbox/Application architecture models.md",
-    "99 - Concept Inbox/Orthogonality in software design.md",
-    "99 - Concept Inbox/Stock markets and the real economy.md",
+    "01 - Templates/Concept Template.md",
+    "00 - Home/Enzo Knowledge Base.md",
+    "99 - Concept Inbox/CircleCI.md",
+    "99 - Concept Inbox/Compilation and linking.md",
+    "99 - Concept Inbox/Continuous integration.md",
+    "99 - Concept Inbox/Make and Makefiles.md",
+    "99 - Concept Inbox/Software build automation.md",
     "99 - Concept Inbox/Software build process.md",
-    "99 - Concept Inbox/Temporal coupling.md",
-    "99 - Concept Inbox/Unit tests vs integration tests.md",
-    "99 - Concept Inbox/Bonds and fixed-income securities.md",
-    "99 - Concept Inbox/Code comments as context for humans and AI.md",
-    "99 - Concept Inbox/Concurrency and parallelism.md",
-    "99 - Concept Inbox/DRY principle and knowledge duplication.md",
-    "99 - Concept Inbox/Financial markets - purpose and structure.md",
-    "99 - Concept Inbox/Law of Demeter.md",
-    "99 - Concept Inbox/Makefiles and build automation.md",
-    "98 - Templates",
+    "98 - Concept Backlog/Social Sciences/Metacognitive Awareness.md",
+    "98 - Concept Backlog/Tech/Orthogonality in software design.md",
+    "98 - Concept Backlog/Tech/Unit tests vs integration tests.md",
+    "98 - Concept Backlog/Tech/Temporal coupling.md",
+    "98 - Concept Backlog/Business/Stock markets and the real economy.md",
+    "98 - Concept Backlog/Social Sciences/Scarcity.md",
+    "98 - Concept Backlog/Social Sciences/Marginal Land or Asset.md",
+    "98 - Concept Backlog/Tech/Law of Demeter.md",
+    "98 - Concept Backlog/Business/Financial markets - purpose and structure.md",
+    "98 - Concept Backlog/Tech/DRY principle and knowledge duplication.md",
+    "98 - Concept Backlog/Tech/Design Patterns.md",
+    "98 - Concept Backlog/Tech/Concurrency and parallelism.md",
+    "98 - Concept Backlog/Tech/Code comments as context for humans and AI.md",
+    "98 - Concept Backlog/Business/Bonds and fixed-income securities.md",
+    "98 - Concept Backlog/Tech/Blackboard architectural pattern.md",
+    "98 - Concept Backlog/Tech/Application architecture models.md",
+    "01 - Templates/KB Update Workflow.md",
+    "Tech/00 - Home/Tech Knowledge.md",
+    "98 - Concept Backlog/Social Sciences",
+    "98 - Concept Backlog/Business",
+    "98 - Concept Backlog/Tech",
+    "98 - Concept Backlog",
+    "100 - Resource Inbox",
+    "01 - Templates",
     "99 - Concept Inbox",
     "Business/90 - Resources",
     "Business/10 - Knowledge",
-    "Business/00 - Home",
-    "Social Sciences/90 - Resources",
-    "Social Sciences/10 - Knowledge",
-    "Social Sciences/00 - Home",
-    "97 - Assets"
+    "Business/00 - Home"
   ]
 }
