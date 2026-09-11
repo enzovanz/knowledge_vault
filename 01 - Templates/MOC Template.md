@@ -26,4 +26,4 @@ Work from top to bottom and focus on only the first two or three unchecked topic
 
 - [ ] Advanced topic
 
-When a topic becomes a note, move it to **Knowledge notes**, remove the checkbox, and move the note from the shared `99 - Inbox` to the relevant domain's `10 - Knowledge` folder.
+When a topic becomes a note, move it to **Knowledge notes**, remove the checkbox, and move the note from `99 - Concept Inbox` or its domain folder in `98 - Concept Backlog` to the relevant domain's `10 - Knowledge` folder.

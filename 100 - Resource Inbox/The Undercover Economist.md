@@ -4,7 +4,7 @@ domain: economics
 created: 2026-09-10
 resource_type: book
 author:
-  - Tim Haford
+  - Tim Harford
 url:
 started: 2026-09-09
 completed:

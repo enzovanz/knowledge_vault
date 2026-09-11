@@ -42,4 +42,4 @@ Work from top to bottom and focus on only the first two or three unchecked topic
 - [ ] Distributed data processing
 - [ ] Data lineage
 
-When a topic becomes a note, move it to **Knowledge notes**, remove the checkbox, and move the note from `99 - Inbox` to `10 - Knowledge`.
+When a topic becomes a note, move it to **Knowledge notes**, remove the checkbox, and move the note from `99 - Concept Inbox` or `98 - Concept Backlog/Tech` to `Tech/10 - Knowledge`.
