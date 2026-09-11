@@ -1,0 +1,223 @@
+{
+  "main": {
+    "id": "de7eced3e8d9ff1b",
+    "type": "split",
+    "children": [
+      {
+        "id": "f68b21f2805ab4e9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bc4d257008944c4c",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "cb87af1b8a7fbcb5",
+    "type": "split",
+    "children": [
+      {
+        "id": "921ed43e96c8c4eb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bf68492a9f6c885a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "034796fa5114ac5a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "0057728440ae6187",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "ef8686404a246074",
+    "type": "split",
+    "children": [
+      {
+        "id": "1d79b1730547774f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e04adaa7ae1dd93a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "f9535cd90f3c13c6",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "13b874abd56114ba",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "1dc0e7bb7797691b",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "0ef1e10015774e23",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "98 - Templates/Properties Schema.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "bf68492a9f6c885a",
+  "lastOpenFiles": [
+    "Tech/90 - Resources/The Pragmatic Programmer.md",
+    "Social Sciences/00 - Home/Economics MOC.md",
+    "Untitled.md",
+    "100 - Resource Inbox/The Undercover Economist.md",
+    "100 - Resource Inbox",
+    "99 - Inbox/Untitled.md",
+    "Tech/90 - Resources/Code - The Hidden Language of Computer Hardware and Software.md",
+    "Tech/90 - Resources/Fundamentals of Data Engineering - Plan and Build Robust Data Systems.md",
+    "98 - Templates/Resource Template.md",
+    "99 - Concept Inbox/Marginal Land or Asset.md",
+    "99 - Concept Inbox/Scarcity.md",
+    "99 - Concept Inbox/Metacognitive Awareness.md",
+    "99 - Concept Inbox/Design Patterns.md",
+    "99 - Concept Inbox/Blackboard architectural pattern.md",
+    "99 - Concept Inbox/Application architecture models.md",
+    "99 - Concept Inbox/Orthogonality in software design.md",
+    "99 - Concept Inbox/Stock markets and the real economy.md",
+    "99 - Concept Inbox/Software build process.md",
+    "99 - Concept Inbox/Temporal coupling.md",
+    "99 - Concept Inbox/Unit tests vs integration tests.md",
+    "99 - Concept Inbox/Bonds and fixed-income securities.md",
+    "99 - Concept Inbox/Code comments as context for humans and AI.md",
+    "99 - Concept Inbox/Concurrency and parallelism.md",
+    "99 - Concept Inbox/DRY principle and knowledge duplication.md",
+    "99 - Concept Inbox/Financial markets - purpose and structure.md",
+    "99 - Concept Inbox/Law of Demeter.md",
+    "99 - Concept Inbox/Makefiles and build automation.md",
+    "98 - Templates",
+    "99 - Concept Inbox",
+    "Business/90 - Resources",
+    "Business/10 - Knowledge",
+    "Business/00 - Home",
+    "Social Sciences/90 - Resources",
+    "Social Sciences/10 - Knowledge",
+    "Social Sciences/00 - Home",
+    "97 - Assets"
+  ]
+}
