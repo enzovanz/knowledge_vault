@@ -34,7 +34,7 @@ The compilation and linking stages can be performed manually or coordinated by a
 
 ## Connections
 
-- Stage: [[Compilation and linking]]
+- Common execution model: [[Ahead-of-time compilation (AOT)]]
 - Automated by: [[Software build automation]]
 - Related: [[Make and Makefiles]], [[Continuous integration]]
 - Sources:

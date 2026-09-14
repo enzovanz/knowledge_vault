@@ -6,12 +6,6 @@ domain: networking
 
 Networking covers how computers and systems communicate, including how data is transmitted, addressed, routed, and delivered across local and global networks.
 
-## Knowledge notes
-
-Add a link here after a concept note is useful enough to revisit.
-
-_No notes yet._
-
 ## Learning path
 
 Work from top to bottom and focus on only the first two or three unchecked topics.
@@ -43,4 +37,4 @@ Work from top to bottom and focus on only the first two or three unchecked topic
 - [ ] BGP
 - [ ] Anycast
 
-When a topic becomes a note, move it to **Knowledge notes**, remove the checkbox, and move the note from `99 - Concept Inbox` or `98 - Concept Backlog/Tech` to `Tech/10 - Knowledge`.
+When a topic becomes a developed note, keep its link in the appropriate topical section, remove the checkbox, and move the note from `99 - Concept Inbox` or `98 - Concept Backlog/Tech` to `Tech/10 - Knowledge`.

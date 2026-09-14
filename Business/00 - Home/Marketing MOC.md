@@ -15,12 +15,6 @@ Marketing studies how organizations understand customer needs, create and commun
 - Pricing and distribution
 - Marketing communications and analytics
 
-## Knowledge notes
-
-Add links only to notes that already exist.
-
-_No notes yet._
-
 ## Learning path
 
 ### Foundations
@@ -34,3 +28,5 @@ _No notes yet._
 ### Advanced topics
 
 - [ ] Advanced marketing topic
+
+When a topic becomes a developed note, keep its link in the appropriate topical section, remove the checkbox, and move the note from `99 - Concept Inbox` or its domain folder in `98 - Concept Backlog` to the relevant domain's `10 - Knowledge` folder.

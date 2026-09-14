@@ -160,6 +160,6 @@ recipes rebuild only what is necessary
 ## Connections
 
 - Broader concept: [[Software build automation]]
-- Related: [[Software build process]], [[Compilation and linking]]
+- Related: [[Software build process]], [[Ahead-of-time compilation (AOT)]]
 - Can be invoked by: [[Continuous integration]], [[CircleCI]]
 - Sources:

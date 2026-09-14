@@ -6,22 +6,41 @@ domain: software engineering
 
 Software engineering covers the principles and practices used to design, build, deploy, and maintain reliable software systems. It includes architecture, code quality, concurrency, collaboration, testing, and the management of change over time.
 
-## Knowledge notes
-
-Add a link here after a concept note is useful enough to revisit.
-
-_No notes yet._
-
 ## Learning path
 
 Work from top to bottom and focus on only the first two or three unchecked topics.
+
+### Code execution concept map
+
+This map separates instructions for language tools from instructions the physical CPU can execute:
+
+```mermaid
+flowchart TD
+    Models["Programming language execution models"]
+    Models --> AOT["Ahead-of-time compilation"]
+    Models --> Interpretation["Interpretation"]
+    Models --> Bytecode["Bytecode virtual machines"]
+    Models --> JIT["Just-in-time compilation"]
+    Models --> Transpilation["Transpilation"]
+
+    AOT --> CompileLink["Compilation and linking stages"]
+    CompileLink --> Native["Native machine code"]
+    Bytecode --> CPython["CPython evaluation loop"]
+    JIT --> RuntimeNative["Native code generated at runtime"]
+
+    Native --> CPU["CPU"]
+    CPython --> CPU
+    RuntimeNative --> CPU
+```
+
+See [[Programming language execution models]] for the detailed C and CPython execution paths, then continue into [[Ahead-of-time compilation (AOT)]], [[Interpretation]], and [[Bytecode virtual machine]].
 
 ### Build and CI concept map
 
 This chain connects the transformation of source code to its automated validation:
 
 ```text
-Compilation and linking
+Ahead-of-time compilation (including compilation and linking)
         ↓ can be part of
 Software build process
         ↓ coordinated by
@@ -40,7 +59,10 @@ CircleCI
 - [ ] Abstraction and modularity
 - [ ] Cohesion and coupling
 - [ ] Interfaces and contracts
-- [ ] [[Compilation and linking]]
+- [[Programming language execution models]]
+- [[Ahead-of-time compilation (AOT)]]
+- [[Interpretation]]
+- [[Bytecode virtual machine]]
 - [ ] [[Software build process]]
 - [ ] Testing fundamentals
 - [ ] [[Unit tests vs integration tests]]
@@ -66,4 +88,4 @@ CircleCI
 - [ ] [[Concurrency and parallelism]]
 - [ ] [[Temporal coupling]]
 
-When a topic is developed, move it to **Knowledge notes**, remove the checkbox, and move the note from `99 - Concept Inbox` or `98 - Concept Backlog/Tech` to `Tech/10 - Knowledge`.
+When a topic becomes a developed note, keep its link in the appropriate topical section, remove the checkbox, and move the note from `99 - Concept Inbox` or `98 - Concept Backlog/Tech` to `Tech/10 - Knowledge`.
