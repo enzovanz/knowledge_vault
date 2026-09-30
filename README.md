@@ -40,7 +40,7 @@ A note is complete when it can be understood without reopening the original sour
 
 ## CI checks
 
-The `Vault checks` GitHub Actions workflow runs after every push to
+The `Knowledge base validation` GitHub Actions workflow runs after every push to
 `main`, or manually from the repository's Actions tab.
 
 ### Internal links
@@ -92,14 +92,30 @@ of filename. The domain is the top-level folder, such as `Tech`, not the
 `domain` property.
 
 Wikilinks, aliases, heading references, embeds, and ordinary Markdown links
-count. A link must identify one file; when titles repeat, use a specific path.
+count. A link must identify one file.
 Links through another note or another domain's MOC do not satisfy the rule.
 Code examples, HTML comments, frontmatter links, and dynamic queries do not count.
 Inboxes, backlogs, resources, templates, and non-Markdown files are excluded.
 
 Uncovered notes fail CI with an error naming the note and the domain home
-folder where a MOC reference is needed. Link, property, and coverage checks
-run even if another validation check fails, provided the checker tests pass.
+folder where a MOC reference is needed.
+
+### Unique note titles
+
+Every Markdown file in the visible vault must have a unique filename title
+(the filename without `.md`), including notes in inboxes, backlogs, resources,
+templates, and the vault root. The comparison ignores capitalization and
+normalizes equivalent Unicode spellings. `Example.md` and `example.md` therefore
+conflict even in different domains.
+
+Duplicates fail CI whether or not any links reference them. Using full paths
+in links does not exempt duplicate titles. Rename or consolidate the notes
+and update their references; the checker lists every conflicting file.
+Headings, YAML title properties, and display aliases are not compared.
+Hidden files/directories and non-Markdown attachments are excluded.
+
+All validation checks run even if another validation check fails, provided
+the checker tests pass.
 
 ### Run locally
 
@@ -112,6 +128,7 @@ python -m pip install -r .scripts/requirements.txt
 python .scripts/check_links.py
 python .scripts/check_properties.py
 python .scripts/check_moc_coverage.py
+python .scripts/check_duplicate_titles.py
 ```
 
 Run the checkers' tests with:

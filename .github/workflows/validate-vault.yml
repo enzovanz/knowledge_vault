@@ -1,4 +1,4 @@
-name: Vault checks
+name: Knowledge base validation
 
 on:
   push:
@@ -9,7 +9,7 @@ permissions:
   contents: read
 
 jobs:
-  check-links:
+  validate-vault:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
@@ -30,3 +30,6 @@ jobs:
       - name: Check same-domain MOC coverage
         if: ${{ !cancelled() && steps.tests.outcome == 'success' }}
         run: python .scripts/check_moc_coverage.py
+      - name: Check duplicate note titles
+        if: ${{ !cancelled() && steps.tests.outcome == 'success' }}
+        run: python .scripts/check_duplicate_titles.py
