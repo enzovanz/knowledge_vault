@@ -119,17 +119,29 @@ the checker tests pass.
 
 ### Run locally
 
-Set up the dependencies and run the checks with Python 3.12:
+Set up the environment once with Python 3.12:
 
 ```sh
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install -r .scripts/requirements.txt
-python .scripts/check_links.py
-python .scripts/check_properties.py
-python .scripts/check_moc_coverage.py
-python .scripts/check_duplicate_titles.py
 ```
+
+With the environment active, run all four checks with one command:
+
+```sh
+python .scripts/validate.py
+```
+
+Without activating it, use `.venv/bin/python .scripts/validate.py`.
+The same command runs in CI. Each check prints a green `PASS` or red `FAIL`
+with its diagnostics, followed by an overall summary. All four checks run even
+if one fails; the command exits with status 1 if any check fails.
+
+Colors are automatic in terminals and GitHub Actions. Redirected output is
+plain text. Use `--color always` to force colors or `--color never` to disable
+them; the `NO_COLOR` environment variable also disables automatic color.
+The individual `.scripts/check_*.py` commands remain available for focused checks.
 
 Run the checkers' tests with:
 
