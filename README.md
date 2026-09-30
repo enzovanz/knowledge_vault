@@ -59,14 +59,14 @@ Run the same check locally with Python 3.12:
 ```sh
 python3 -m venv .venv
 source .venv/bin/activate
-python -m pip install -r scripts/requirements.txt
-python scripts/check_links.py
+python -m pip install -r .scripts/requirements.txt
+python .scripts/check_links.py
 ```
 
 Run the checker's tests with:
 
 ```sh
-python -m unittest discover -s scripts -p 'test_*.py'
+python -m unittest discover -s .scripts -p 'test_*.py'
 ```
 
 A failed run exits with an error and lists missing targets in the workflow log
