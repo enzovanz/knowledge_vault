@@ -27,3 +27,6 @@ jobs:
       - name: Validate note properties
         if: ${{ !cancelled() && steps.tests.outcome == 'success' }}
         run: python .scripts/check_properties.py
+      - name: Check same-domain MOC coverage
+        if: ${{ !cancelled() && steps.tests.outcome == 'success' }}
+        run: python .scripts/check_moc_coverage.py

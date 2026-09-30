@@ -53,21 +53,23 @@ def links(text):
                 yield token.attrGet("src"), False, line
 
 
-def target_exists(target, source, files, wiki=False):
+def target_paths(target, source, files, wiki=False):
+    """Return matching file paths, or None for external/same-note links."""
     if re.match(r"^[a-zA-Z][a-zA-Z0-9+.-]*:", target) or target.startswith("//"):
-        return True
+        return None
     # Decode after splitting: %23 can be part of a filename.
     path = target.split("#", 1)[0]
     if not wiki:
         path = path.split("?", 1)[0]
     path = unquote(path).strip()
     if not path:
-        return True
+        return None
 
     names = (path, path + ".md")
     relative = path.startswith(("./", "../"))
     rooted = path.startswith("/")
     parent = posixpath.dirname(source)
+    matches = set()
     for name in names:
         candidates = (
             [posixpath.normpath(name.lstrip("/"))]
@@ -79,13 +81,16 @@ def target_exists(target, source, files, wiki=False):
         )
         if relative:
             candidates = candidates[:1]
-        if any(candidate in files for candidate in candidates):
-            return True
+        matches.update(candidate for candidate in candidates if candidate in files)
         # Obsidian permits shortest unique paths, including bare note titles.
         if not relative and not rooted:
-            if any(file.endswith("/" + name) for file in files):
-                return True
-    return False
+            matches.update(file for file in files if file.endswith("/" + name))
+    return matches
+
+
+def target_exists(target, source, files, wiki=False):
+    matches = target_paths(target, source, files, wiki)
+    return matches is None or bool(matches)
 
 
 def inventory(root):

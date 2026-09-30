@@ -81,12 +81,29 @@ resource capture folders must use their corresponding type. Templates and
 repository-level documents such as this README are exempt.
 
 Invalid properties fail CI and identify the affected file in the logs and
-GitHub annotations. Both link and property checks run even if the link check
-fails, provided the checker tests pass.
+GitHub annotations.
+
+### MOC coverage
+
+Every Markdown note under `<Domain>/10 - Knowledge/`, including subfolders,
+must have a direct reference from at least one MOC under that same domain's
+`00 - Home/` folder. MOCs are identified by `type: moc` in frontmatter, regardless
+of filename. The domain is the top-level folder, such as `Tech`, not the
+`domain` property.
+
+Wikilinks, aliases, heading references, embeds, and ordinary Markdown links
+count. A link must identify one file; when titles repeat, use a specific path.
+Links through another note or another domain's MOC do not satisfy the rule.
+Code examples, HTML comments, frontmatter links, and dynamic queries do not count.
+Inboxes, backlogs, resources, templates, and non-Markdown files are excluded.
+
+Uncovered notes fail CI with an error naming the note and the domain home
+folder where a MOC reference is needed. Link, property, and coverage checks
+run even if another validation check fails, provided the checker tests pass.
 
 ### Run locally
 
-Set up the dependencies and run both checks with Python 3.12:
+Set up the dependencies and run the checks with Python 3.12:
 
 ```sh
 python3 -m venv .venv
@@ -94,6 +111,7 @@ source .venv/bin/activate
 python -m pip install -r .scripts/requirements.txt
 python .scripts/check_links.py
 python .scripts/check_properties.py
+python .scripts/check_moc_coverage.py
 ```
 
 Run the checkers' tests with:
