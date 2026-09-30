@@ -49,5 +49,6 @@ The Makefile determines what `format-check` means; CircleCI determines when and 
 ## Connections
 
 - Implements: [[Continuous integration]]
+- Comparable platform: [[GitHub Actions]]
 - Can invoke: [[Make and Makefiles]], [[Software build automation]]
 - Sources:

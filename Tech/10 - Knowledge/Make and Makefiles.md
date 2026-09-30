@@ -157,9 +157,20 @@ make determines what is outdated
 recipes rebuild only what is necessary
 ```
 
+## Make inside a CI/CD pipeline
+
+[[GitHub Actions]] or [[CircleCI]] can invoke Make from a pipeline step. The platform handles the trigger, runner, job coordination, and result reporting; the Makefile supplies the project commands and target dependencies.
+
+```text
+Pull request → GitHub Actions job → make test → test recipe
+Developer's terminal            → make test → same test recipe
+```
+
+Make can run tests, build packages, or invoke deployment scripts, but it does not itself provide hosted runners or listen for GitHub events. It is useful alongside CI/CD platforms. See [[GitHub Actions#Example]] for a workflow and Makefile used together.
+
 ## Connections
 
 - Broader concept: [[Software build automation]]
 - Related: [[Software build process]], [[Ahead-of-time compilation (AOT)]]
-- Can be invoked by: [[Continuous integration]], [[CircleCI]]
+- Can be invoked by: [[Continuous integration]], [[GitHub Actions]], [[CircleCI]]
 - Sources:

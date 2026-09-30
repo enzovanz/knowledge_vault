@@ -35,23 +35,57 @@ flowchart TD
 
 See [[Programming language execution models]] for the detailed C and CPython execution paths, then continue into [[Ahead-of-time compilation (AOT)]], [[Interpretation]], and [[Bytecode virtual machine]].
 
-### Build and CI concept map
+### Product Engineering
 
-This chain connects the transformation of source code to its automated validation:
+#### Product Analytics
 
-```text
-Ahead-of-time compilation (including compilation and linking)
-        ↓ can be part of
-Software build process
-        ↓ coordinated by
-Software build automation
-        ↓ implemented by
-Make and Makefiles
-        ↓ may be invoked by
-Continuous integration
-        ↓ platform example
-CircleCI
+- [ ] [[PostHog]]
+	- [ ] [[Feature Flags]]
+
+### DevOps
+
+#### Software delivery lifecycle
+
+Build, deployment, and release describe different state transitions. Build automation and continuous integration describe how parts of that lifecycle are executed and validated repeatedly.
+
+```mermaid
+flowchart LR
+    Source["Source code"] --> Build["Software build process"]
+    Build --> Artifact["Deployable artifact"]
+    Artifact --> Deploy["Software deployment process"]
+    Deploy --> Environment["Software deployment environment"]
+    Environment --> Running["Running software"]
+    Running --> Release["Software release process"]
+    Release --> Users["Available to users"]
+
+    Automation["Software build automation"] -. coordinates .-> Build
+    Make["Make and Makefiles"] --> Automation
+    CI["Continuous integration"] -. invokes and validates .-> Automation
+    CircleCI["CircleCI"] --> CI
+    GitHubActions["GitHub Actions"] --> CI
 ```
+
+##### Build and continuous integration
+
+- [ ] [[Software build process]]
+- [ ] [[Software build automation]]
+- [ ] [[Make and Makefiles]]
+- [ ] [[Continuous integration]]
+- [ ] [[GitHub Actions]] — workflows, `.github` structure, automation examples, and how  Actions works with Make
+- [ ] [[CircleCI]]
+
+##### Deployment and release
+
+- [ ] [[Software deployment environments]]
+- [ ] [[Software deployment process]]
+- [ ] [[Continuous deployment]]
+- [ ] [[Software release process]]
+
+### SRE / Production Engineering
+
+#### Observability
+
+- [ ] Datadog
 
 ### Foundations
 
@@ -60,10 +94,9 @@ CircleCI
 - [ ] Cohesion and coupling
 - [ ] Interfaces and contracts
 - [[Programming language execution models]]
-- [[Ahead-of-time compilation (AOT)]]
-- [[Interpretation]]
-- [[Bytecode virtual machine]]
-- [ ] [[Software build process]]
+	- [[Ahead-of-time compilation (AOT)]]
+	- [[Interpretation]]
+	- [[Bytecode virtual machine]]
 - [ ] Testing fundamentals
 - [ ] [[Unit tests vs integration tests]]
 - [ ] [[Code comments as context for humans and AI]]
@@ -75,10 +108,6 @@ CircleCI
 - [ ] [[Orthogonality in software design]]
 - [ ] [[Law of Demeter]]
 - [ ] [[Application architecture models]]
-- [ ] [[Software build automation]]
-- [ ] [[Make and Makefiles]]
-- [ ] [[Continuous integration]]
-- [ ] [[CircleCI]]
 - [ ] Dependency management
 - [ ] Design patterns
 

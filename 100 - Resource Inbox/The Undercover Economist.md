@@ -22,3 +22,5 @@ What do I want to learn from it?
 
 - [[Scarcity]]
 - [[Marginal Land or Asset]]
+- [[Green Belt and train example]]
+- [[Sustainable Competitive Advantage]]
