@@ -37,3 +37,40 @@ A note is complete when it can be understood without reopening the original sour
 - Use recognized, descriptive note titles.
 - Keep unfinished concepts out of `10 - Knowledge`.
 - Store personal Obsidian workspace state outside version control.
+
+## Internal link checks
+
+The `Check internal links` GitHub Actions workflow runs after every push to
+`main`, or manually from the repository's Actions tab. It checks Markdown notes
+for missing local file targets, including Obsidian wikilinks, aliases, embeds,
+and Markdown links, images, and reference links. Bare note titles and shortened
+vault paths are supported, as are relative paths and URL-encoded spaces.
+
+The check ignores code examples, HTML comments, YAML frontmatter, external URLs,
+and heading/block fragments. It checks that the target file exists, not that a
+heading or block exists. Raw HTML links and links in Canvas files are outside
+its scope. Missing targets in inbox and backlog notes also fail the check.
+Git-ignored files cannot satisfy links; new, non-ignored files are included in
+local checks, so remember to commit them with the notes that reference them.
+Diagnostics point to the start of the Markdown block containing a broken link.
+
+Run the same check locally with Python 3.12:
+
+```sh
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r scripts/requirements.txt
+python scripts/check_links.py
+```
+
+Run the checker's tests with:
+
+```sh
+python -m unittest discover -s scripts -p 'test_*.py'
+```
+
+A failed run exits with an error and lists missing targets in the workflow log
+and GitHub annotations. Because this workflow runs after a push, the commit is
+already on `main`: failure does not reject or undo it. Fix the links and push
+again. To prevent unchecked changes from entering `main`, use a pull request
+workflow with required status checks and branch protection or rulesets.
