@@ -1,7 +1,7 @@
 ---
 type: resource
 domain: software engineering
-resource_type: e-book
+resource_type: website
 author:
   - Adam Wiggins
 url: https://12factor.net/

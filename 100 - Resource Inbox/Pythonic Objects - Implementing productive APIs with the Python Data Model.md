@@ -1,7 +1,7 @@
 ---
 type: resource
 domain: software engineering
-resource_type: Conference Talk
+resource_type: talk
 author:
   - Luciano Ramalho
 url: https://www.youtube.com/watch?v=k55d3ZUF3ZQ

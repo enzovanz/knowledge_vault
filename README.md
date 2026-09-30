@@ -38,10 +38,14 @@ A note is complete when it can be understood without reopening the original sour
 - Keep unfinished concepts out of `10 - Knowledge`.
 - Store personal Obsidian workspace state outside version control.
 
-## Internal link checks
+## CI checks
 
-The `Check internal links` GitHub Actions workflow runs after every push to
-`main`, or manually from the repository's Actions tab. It checks Markdown notes
+The `Vault checks` GitHub Actions workflow runs after every push to
+`main`, or manually from the repository's Actions tab.
+
+### Internal links
+
+It checks Markdown notes
 for missing local file targets, including Obsidian wikilinks, aliases, embeds,
 and Markdown links, images, and reference links. Bare note titles and shortened
 vault paths are supported, as are relative paths and URL-encoded spaces.
@@ -54,16 +58,45 @@ Git-ignored files cannot satisfy links; new, non-ignored files are included in
 local checks, so remember to commit them with the notes that reference them.
 Diagnostics point to the start of the Markdown block containing a broken link.
 
-Run the same check locally with Python 3.12:
+### Note properties
+
+The property checker follows `01 - Templates/Properties Schema.md` and the note
+templates. It validates YAML safely and rejects malformed frontmatter,
+duplicate properties, and invalid field values.
+
+| Note | Required properties |
+| --- | --- |
+| Concepts in a domain's `10 - Knowledge` folder | `type: concept`, lowercase nonempty `domain`, valid `created` date |
+| Resources in a domain's `90 - Resources` folder | `type: resource`, lowercase nonempty `domain`, recognized `resource_type` |
+| Files named `* MOC.md` in a domain's `00 - Home` folder | `type: moc`, lowercase nonempty `domain` |
+
+`created` must be a real calendar date in `YYYY-MM-DD` format. It is optional
+for resources and MOCs, but validated when present. Resource types are `book`,
+`course`, `article`, `video`, `documentation`, `website`, and `podcast`.
+Other properties, such as authors and URLs, remain optional.
+
+Inbox/backlog captures and other home pages may omit frontmatter entirely.
+Once they include it, the same type-specific requirements apply; concept and
+resource capture folders must use their corresponding type. Templates and
+repository-level documents such as this README are exempt.
+
+Invalid properties fail CI and identify the affected file in the logs and
+GitHub annotations. Both link and property checks run even if the link check
+fails, provided the checker tests pass.
+
+### Run locally
+
+Set up the dependencies and run both checks with Python 3.12:
 
 ```sh
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install -r .scripts/requirements.txt
 python .scripts/check_links.py
+python .scripts/check_properties.py
 ```
 
-Run the checker's tests with:
+Run the checkers' tests with:
 
 ```sh
 python -m unittest discover -s .scripts -p 'test_*.py'

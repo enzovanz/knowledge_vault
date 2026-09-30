@@ -1,4 +1,4 @@
-name: Check internal links
+name: Vault checks
 
 on:
   push:
@@ -17,9 +17,13 @@ jobs:
       - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
-      - name: Install Markdown parser
+      - name: Install checker dependencies
         run: python -m pip install -r .scripts/requirements.txt
-      - name: Test the link checker
+      - name: Test vault checkers
+        id: tests
         run: python -m unittest discover -s .scripts -p 'test_*.py'
       - name: Check vault links
         run: python .scripts/check_links.py
+      - name: Validate note properties
+        if: ${{ !cancelled() && steps.tests.outcome == 'success' }}
+        run: python .scripts/check_properties.py
