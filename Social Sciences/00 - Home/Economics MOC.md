@@ -14,7 +14,11 @@ Work from top to bottom and focus on only the first two or three unchecked topic
 ##### Macroeconomics
 - [ ] Foundational macroeconomics topics
 ##### Microeconomics
-- [ ] Foundational microeconomics topics
+- [[Scarcity]]
+- [[Marginal Land or Asset]]
+- [[Own-price elasticity of demand]]
+- [[Price Discrimination and Consumer Willingness to Pay]]
+- [[Sustainable Competitive Advantage]]
 ### Core topics
 
 - [ ] Core economics topic

@@ -12,7 +12,7 @@ Work from top to bottom and focus on only the first two or three unchecked topic
 
 ### Foundations
 
-- [ ] Foundational psychology topic
+- [[Metacognitive Awareness]]
 
 ### Core topics
 

@@ -22,5 +22,6 @@ What do I want to learn from it?
 
 - [[Scarcity]]
 - [[Marginal Land or Asset]]
-- [[Green Belt and train example]]
 - [[Sustainable Competitive Advantage]]
+- [[Own-price elasticity of demand]]
+- [[Price Discrimination and Consumer Willingness to Pay]]
