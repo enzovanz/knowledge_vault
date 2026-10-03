@@ -7,9 +7,11 @@ aliases:
 ---
 ## Summary
 
-Continuous integration (CI) is the practice of integrating code changes frequently and automatically validating each change. It gives the team fast feedback when a change breaks expected behavior or quality checks.
+Continuous integration (CI) is the practice of integrating code changes into a shared codebase frequently and automatically validating each change. It gives the team fast feedback when a change breaks expected behavior or quality checks.
 
 ## Explanation
+
+In this context, **integration** means combining a developer's changes with the shared codebase, usually the repository's main or trunk branch. Frequently pushing an isolated private branch is not equivalent: the code must be validated together with other integrated changes.
 
 A push or pull request commonly triggers a CI pipeline. The CI system creates a controlled environment, checks out the code, installs dependencies, and runs a sequence of automated checks such as:
 

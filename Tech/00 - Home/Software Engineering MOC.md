@@ -46,7 +46,7 @@ See [[Programming language execution models]] for the detailed C and CPython exe
 
 #### Software delivery lifecycle
 
-Build, deployment, and release describe different state transitions. Build automation and continuous integration describe how parts of that lifecycle are executed and validated repeatedly.
+[[Software delivery lifecycle]] connects the state transitions from source code to user-visible behavior. Build automation and continuous integration describe how parts of that lifecycle are executed and validated repeatedly.
 
 ```mermaid
 flowchart LR
@@ -67,19 +67,19 @@ flowchart LR
 
 ##### Build and continuous integration
 
-- [ ] [[Software build process]]
-- [ ] [[Software build automation]]
-- [ ] [[Make and Makefiles]]
-- [ ] [[Continuous integration]]
-- [ ] [[GitHub Actions]] — workflows, `.github` structure, automation examples, and how  Actions works with Make
-- [ ] [[CircleCI]]
+- [[Software build process]]
+- [[Software build automation]]
+- [[Make and Makefiles]]
+- [[Continuous integration]]
+- [[GitHub Actions]] — workflows, `.github` structure, automation examples, and how Actions works with Make
+- [[CircleCI]]
 
 ##### Deployment and release
 
-- [ ] [[Software deployment environments]]
-- [ ] [[Software deployment process]]
-- [ ] [[Continuous deployment]]
-- [ ] [[Software release process]]
+- [[Software deployment environments]]
+- [[Software deployment process]]
+- [[Continuous deployment]]
+- [[Software release process]]
 
 ### SRE / Production Engineering
 
@@ -89,7 +89,6 @@ flowchart LR
 
 ### Foundations
 
-- [ ] Software development lifecycle
 - [ ] Abstraction and modularity
 - [ ] Cohesion and coupling
 - [ ] Interfaces and contracts

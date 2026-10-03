@@ -2,8 +2,6 @@
 type: concept
 domain: software engineering
 created: 2026-09-14
-aliases:
-  - CD
 ---
 ## Summary
 
@@ -22,7 +20,15 @@ A continuous deployment pipeline commonly:
 
 Continuous deployment describes **when and under what conditions deployment happens automatically**. The deployment process describes **how the artifact is installed, configured, started, verified, and rolled back**.
 
-Continuous deployment is different from **continuous delivery**. In continuous delivery, every validated change is kept ready for production, but releasing or deploying it may still require a person to approve the action. Because both terms are abbreviated as **CD**, their intended meaning must be established from context.
+Continuous integration, continuous delivery, and continuous deployment answer different questions:
+
+| Practice | Guarantee |
+| --- | --- |
+| [[Continuous integration]] | Small changes are integrated into the shared codebase and validated frequently |
+| **Continuous delivery** | Validated changes remain ready for production, but production deployment may require approval |
+| **Continuous deployment** | Every validated change is deployed to production automatically |
+
+Continuous delivery and continuous deployment are not sequential pipeline stages. They describe different policies at the production gate. Both are commonly abbreviated **CD**, so a report such as "CD failed" must be clarified by locating the failed boundary.
 
 Automatic deployment also does not require automatic release. A change can be continuously deployed to production while remaining unavailable to users behind a feature flag until the [[Software release process|release process]] exposes it.
 
@@ -39,8 +45,8 @@ A developer merges a change into the main branch. The pipeline runs tests, build
 ## Connections
 
 - Receives validated changes from: [[Continuous integration]]
+- Part of: [[Software delivery lifecycle]]
 - Can be implemented with: [[GitHub Actions]], [[CircleCI]]
 - Automates: [[Software deployment process]]
 - Promotes artifacts through: [[Software deployment environments]]
 - Can remain separate from: [[Software release process]]
-- Sources:
