@@ -25,3 +25,4 @@ What do I want to learn from it?
 - [[Sustainable Competitive Advantage]]
 - [[Own-price elasticity of demand]]
 - [[Price Discrimination and Consumer Willingness to Pay]]
+- [[Second-Degree Price Discrimination and Self-Selection]]

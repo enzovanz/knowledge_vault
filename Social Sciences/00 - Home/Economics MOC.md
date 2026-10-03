@@ -18,6 +18,7 @@ Work from top to bottom and focus on only the first two or three unchecked topic
 - [[Marginal Land or Asset]]
 - [[Own-price elasticity of demand]]
 - [[Price Discrimination and Consumer Willingness to Pay]]
+- [[Second-Degree Price Discrimination and Self-Selection]]
 - [[Sustainable Competitive Advantage]]
 ### Core topics
 

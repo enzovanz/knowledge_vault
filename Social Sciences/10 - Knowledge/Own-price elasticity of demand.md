@@ -5,11 +5,7 @@ created: 2026-09-30
 ---
 ## Summary
 
-Own-price elasticity of demand is a specific quantitative measure of sensitivity—how demand for a product changes when **that product’s own price** changes.
-
-For example, an own-price elasticity of **−1.5** means that, approximately, a **1% increase in price is associated with a 1.5% decrease in quantity demanded**, holding other afactors constant.
-
-In *The Undercover Economist*, this matters because pricing power depends on how strongly customers react when prices change. A firm wants to know whether raising pricwde will increase revenue, lose too many customers, or reveal which customers have fewer alternatives.
+Own-price elasticity of demand measures how quantity demanded responds to a change in **the product's own price**. An elasticity of **−1.5** means a 1% price increase is associated with approximately a 1.5% fall in quantity demanded, holding other factors constant.
 
 ## Explanation
 
@@ -24,7 +20,7 @@ Because demand usually falls when price rises, own-price elasticity is usually n
 - **Elastic demand:** quantity demanded changes a lot when price changes. Customers are price-sensitive, often because substitutes are available.
 - **Inelastic demand:** quantity demanded changes little when price changes. Customers are less price-sensitive, often because the product is urgent, convenient, differentiated, or hard to substitute.
 
-This connects directly to price discrimination. If a seller can identify customers with inelastic demand, it can charge them more. If it can identify elastic customers, it may use discounts to sell to them without lowering prices for everyone.
+This helps explain group pricing in [[Price Discrimination and Consumer Willingness to Pay]]: when costs are comparable and groups can be kept separate, a seller can generally charge more to groups whose demand is less price-sensitive. A group's elasticity describes how its purchases respond to price changes; it does not reveal each member's maximum willingness to pay.
 
 ## Example
 
