@@ -127,14 +127,15 @@ source .venv/bin/activate
 python -m pip install -r .scripts/requirements.txt
 ```
 
-With the environment active, run all four checks with one command:
+Run all four checks with one command:
 
 ```sh
-python .scripts/validate.py
+make validate
 ```
 
-Without activating it, use `.venv/bin/python .scripts/validate.py`.
-The same command runs in CI. Each check prints a green `PASS` or red `FAIL`
+The Make target uses `.venv/bin/python` when the local virtual environment
+exists, and otherwise falls back to `python3`. The same command runs in CI.
+Each check prints a green `PASS` or red `FAIL`
 with its diagnostics, followed by an overall summary. All four checks run even
 if one fails; the command exits with status 1 if any check fails.
 
