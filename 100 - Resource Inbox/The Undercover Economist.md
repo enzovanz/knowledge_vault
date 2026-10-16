@@ -26,3 +26,8 @@ What do I want to learn from it?
 - [[Own-price elasticity of demand]]
 - [[Price Discrimination and Consumer Willingness to Pay]]
 - [[Second-Degree Price Discrimination and Self-Selection]]
+- [[Nominal and Real Interest Rates]]
+- [[Prices as Market Signals]]
+- [[Taxes and Deadweight Loss]]
+- [[Economic Efficiency and Fairness]]
+- [[Market Institutions and Economic Power]]

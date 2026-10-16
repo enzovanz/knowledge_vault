@@ -20,6 +20,12 @@ Work from top to bottom and focus on only the first two or three unchecked topic
 - [[Price Discrimination and Consumer Willingness to Pay]]
 - [[Second-Degree Price Discrimination and Self-Selection]]
 - [[Sustainable Competitive Advantage]]
+- [[Nominal and Real Interest Rates]]
+- [[Prices as Market Signals]]
+- [[Taxes and Deadweight Loss]]
+- [[Economic Efficiency and Fairness]]
+- [[Market Institutions and Economic Power]]
+
 ### Core topics
 
 - [ ] Core economics topic

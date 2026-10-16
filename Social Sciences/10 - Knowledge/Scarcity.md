@@ -23,6 +23,8 @@ Harford's key move is to separate **cost** from **scarcity rent**:
 
 Scarcity can also shift. A new train station, zoning rule, green belt, bridge, remote-work trend, or competitor can change which places and assets are scarce. When scarcity shifts, value moves with it.
 
+When a firm controls scarce access and competitors cannot enter, scarcity becomes **market power**. Competition matters because high profits ordinarily invite rivals to expand supply and erode that power. Firms may defend it through superior capabilities, but also through exclusive contracts, coordination, lobbying, or rules whose compliance costs disproportionately deter new entrants. Distinguishing protection from legitimate safety regulation requires examining the specific barrier and who can realistically satisfy it.
+
 ## Example
 
 A coffee cart inside a busy train station can charge more than an identical coffee cart several blocks away. The coffee is not necessarily better. The scarce resource is the station location: thousands of commuters pass by, many have little time, and only a few vendors can occupy that space.
@@ -31,5 +33,5 @@ The extra profit does not usually stay with the coffee seller forever. If the la
 
 ## Connections
 
-- Related: [[Marginal Land or Asset]], [[Sustainable Competitive Advantage]], [[Price Discrimination and Consumer Willingness to Pay]], [[Own-price elasticity of demand]]
+- Related: [[Marginal Land or Asset]], [[Sustainable Competitive Advantage]], [[Price Discrimination and Consumer Willingness to Pay]], [[Own-price elasticity of demand]], [[Market Institutions and Economic Power]]
 - Source: [[The Undercover Economist]]
