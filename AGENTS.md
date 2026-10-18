@@ -31,6 +31,7 @@ Use the existing `Tech`, `Business`, and `Social Sciences` domains. Organize nar
 - Explain each idea once. Link to an existing explanation instead of repeating it across notes.
 - Cut filler, repeated conclusions, rhetorical questions, long example lists, and unnecessary background. Keep qualifications that affect correctness.
 - Use plain language and recognized, descriptive titles that are unique across the vault. Avoid empty sections and decorative metadata.
+- Use Mermaid when a flowchart or relationship diagram materially clarifies a concept; keep diagrams focused and use prose when it is clearer.
 - Keep edits scoped to the requested material and necessary connections.
 
 ## Before finishing
