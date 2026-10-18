@@ -39,10 +39,14 @@ See [[Programming language execution models]] for the detailed C and CPython exe
 
 #### Product Analytics
 
-- [ ] [[PostHog]]
-	- [ ] [[Feature Flags]]
+- [[PostHog]]
+	- [[Feature Flags]]
 
 ### DevOps
+
+#### Virtualization and infrastructure
+
+- [[Hypervisors and virtual machines]] — hardware virtualization, KVM/QEMU, and the boundary between VMs and containers
 
 #### Software delivery lifecycle
 
