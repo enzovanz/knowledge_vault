@@ -93,6 +93,7 @@ flowchart LR
 
 ### Foundations
 
+- [[Linux-based operating systems]] — operating systems, the Linux kernel, GNU, distributions, free and open-source software, and KDE Plasma
 - [ ] Abstraction and modularity
 - [ ] Cohesion and coupling
 - [ ] Interfaces and contracts
