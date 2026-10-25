@@ -24,6 +24,12 @@ flowchart BT
 
 The **kernel** is the privileged part closest to the hardware. Programs ask it to perform operations such as opening a file, sending network data, allocating memory, or drawing through a device driver. Linux is one kernel; it is not, by itself, the whole system a person installs and uses.
 
+## Unix and Unix-like systems
+
+**Unix** is an operating-system family that originated at [Bell Labs in 1969](https://www.unix.org/unix_history.html). Its design supports multiple users and concurrent programs, organizes files in a hierarchy rooted at `/`, and provides small tools that can be combined through a command-line shell.
+
+Linux-based operating systems are **Unix-like**: they follow many Unix interfaces and conventions without requiring the original Unix source code. For example, Ubuntu lets a user combine commands with a pipe (`|`), passing one program's output to another. Unix-like describes this resemblance; the **UNIX** name is also a trademark reserved for systems certified under [The Open Group's UNIX certification program](https://www.opengroup.org/certifications/unix).
+
 ## GNU and free software
 
 The **GNU Project** began in 1983 to build a Unix-like operating system whose users could control and modify it. It produced many important system components, including the Bash shell, the GNU C Library, Coreutils, GCC, GDB, and Make. GNU also developed the GNU General Public License (GPL), a widely used free-software license.
@@ -38,6 +44,10 @@ A **Linux distribution**, or distro, packages the kernel with selected system so
 
 A **desktop environment** is a graphical user interface that lets people interact with the underlying operating system through visible elements such as windows, icons, panels, menus, settings, notifications, and a file manager. It provides a human-friendly alternative to performing tasks by typing commands into a command-line shell, although both interfaces ultimately use the same underlying system services. The desktop environment sits above the operating-system foundations and can usually be replaced without changing the kernel. KDE is the community that develops **Plasma**, while **GNOME** is another widely used desktop environment. A distribution may offer Plasma, GNOME, another desktop, or no graphical desktop at all.
 
+### Ubuntu flavors
+
+[Ubuntu flavors](https://ubuntu.com/desktop/flavors) are officially recognized, community-developed variants of Ubuntu. They share Ubuntu's underlying system and package repositories but offer different desktop environments, default applications, or specialized purposes. For example, **Kubuntu** uses KDE Plasma, **Xubuntu** uses Xfce, and **Lubuntu** uses LXQt; **Ubuntu Studio** focuses on audio, video, and graphics production. A flavor provides these choices as a ready-to-install system.
+
 ## Example
 
 Kubuntu combines the Linux kernel, many GNU and other system components, Ubuntu's package repositories and tools, and KDE Plasma. The kernel communicates with the laptop's hardware; system services manage networking and login; Plasma provides the visible desktop; and applications run on top. Together these layers form the usable operating system that people commonly call “Linux.”
@@ -45,4 +55,4 @@ Kubuntu combines the Linux kernel, many GNU and other system components, Ubuntu'
 ## Connections
 
 - Related: [[Hypervisors and virtual machines]], [[Ahead-of-time compilation (AOT)]]
-- Sources: [How to Linux videos](https://www.youtube.com/@thehowtolinux/videos), [Linux Kernel Organization — About Linux](https://www.kernel.org/linux.html), [GNU in a Nutshell](https://www.gnu.org/gnu/about-gnu.html.en), [GNU — What is Free Software?](https://www.gnu.org/philosophy/free-sw.en.html), [KDE — About KDE](https://kde.org/community/whatiskde/)
+- Sources: [[How to Linux - Videos 1–100]], [Linux Kernel Organization — About Linux](https://www.kernel.org/linux.html), [GNU in a Nutshell](https://www.gnu.org/gnu/about-gnu.html.en), [GNU — What is Free Software?](https://www.gnu.org/philosophy/free-sw.en.html), [KDE — About KDE](https://kde.org/community/whatiskde/)

@@ -30,6 +30,8 @@ Continuous integration, continuous delivery, and continuous deployment answer di
 
 Continuous delivery and continuous deployment are not sequential pipeline stages. They describe different policies at the production gate. Both are commonly abbreviated **CD**, so a report such as "CD failed" must be clarified by locating the failed boundary.
 
+Continuous delivery can support either a **rolling release** model (ongoing updates, as in Arch Linux) or a **fixed release** model (discrete versions, as in Ubuntu). These describe how updates are published and adopted; see [[Software release process#Rolling release versus fixed release|rolling release versus fixed release]] for the distinction and upgrade behavior.
+
 Automatic deployment also does not require automatic release. A change can be continuously deployed to production while remaining unavailable to users behind a feature flag until the [[Software release process|release process]] exposes it.
 
 ### Tools that run the pipeline
