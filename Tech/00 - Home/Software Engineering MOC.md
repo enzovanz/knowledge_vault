@@ -93,6 +93,7 @@ flowchart LR
 
 ### Foundations
 
+- [[Terminals, shells, and command-line interfaces]] — terminal emulators, command interpretation, OS calls, and local or remote CLI tools
 - [[Linux-based operating systems]] — operating systems, the Linux kernel, GNU, distributions, free and open-source software, and KDE Plasma
 - [ ] Abstraction and modularity
 - [ ] Cohesion and coupling

@@ -24,6 +24,14 @@ flowchart BT
 
 The **kernel** is the privileged part closest to the hardware. Programs ask it to perform operations such as opening a file, sending network data, allocating memory, or drawing through a device driver. Linux is one kernel; it is not, by itself, the whole system a person installs and uses.
 
+### The input-output loop
+
+![Human, hardware, and Linux software input-output loop](../../97%20-%20Assets/Linux%20kernel%20and%20gaming%20input-output%20latency.svg)
+
+Read the diagram as a loop: a person provides input through devices such as a keyboard or mouse; kernel subsystems and user-space software process it; output devices return visual, audio, or physical feedback. The gaming and VR details illustrate this broader relationship. **User space** is where applications and supporting libraries run; **kernel space** is where the kernel and its drivers perform privileged work.
+
+Image: Shmuel Csaba Otto Traian (ScotXW), [Linux kernel and gaming input-output latency](https://commons.wikimedia.org/wiki/File:Linux_kernel_and_gaming_input-output_latency.svg), [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/).
+
 ## Unix and Unix-like systems
 
 **Unix** is an operating-system family that originated at [Bell Labs in 1969](https://www.unix.org/unix_history.html). Its design supports multiple users and concurrent programs, organizes files in a hierarchy rooted at `/`, and provides small tools that can be combined through a command-line shell.
@@ -54,5 +62,5 @@ Kubuntu combines the Linux kernel, many GNU and other system components, Ubuntu'
 
 ## Connections
 
-- Related: [[Hypervisors and virtual machines]], [[Ahead-of-time compilation (AOT)]]
+- Related: [[Hypervisors and virtual machines]], [[Ahead-of-time compilation (AOT)]], [[Terminals, shells, and command-line interfaces]]
 - Sources: [[How to Linux - Videos 1–100]], [Linux Kernel Organization — About Linux](https://www.kernel.org/linux.html), [GNU in a Nutshell](https://www.gnu.org/gnu/about-gnu.html.en), [GNU — What is Free Software?](https://www.gnu.org/philosophy/free-sw.en.html), [KDE — About KDE](https://kde.org/community/whatiskde/)
