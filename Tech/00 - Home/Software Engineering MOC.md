@@ -72,6 +72,7 @@ flowchart LR
 ##### Build and continuous integration
 
 - [[Software build process]]
+- [[Package managers and package formats]] — distribution formats, libraries, dependency resolution, and installation lifecycle
 - [[Software build automation]]
 - [[Make and Makefiles]]
 - [[Continuous integration]]
