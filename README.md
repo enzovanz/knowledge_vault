@@ -12,7 +12,7 @@ Open `00 - Home/Enzo Knowledge Base.md` to navigate the vault and review the cur
 - `98 - Concept Backlog/` — concepts grouped by domain for later study
 - `99 - Concept Inbox/` — quick concept captures to process soon
 - `100 - Resource Inbox/` — books, articles, courses, and other unprocessed sources
-- `Tech/`, `Business/`, and `Social Sciences/` — domain-specific MOCs, knowledge notes, and processed resources
+- `Tech/`, `Business/`, `Social Sciences/`, and `Languages/` — domain-specific MOCs, knowledge notes, and processed resources
 
 Each domain follows the same layout:
 

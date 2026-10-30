@@ -6,6 +6,7 @@ Use this page as the entry point for every study domain.
 - [[Tech Knowledge]]
 - [[Social Sciences Knowledge]]
 - [[Business Knowledge]]
+- [[Languages Knowledge]]
 
 ## Concept Inbox
 

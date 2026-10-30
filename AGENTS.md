@@ -14,7 +14,7 @@ Keep notes focused, connected, and easy to review. Prefer a small update to an e
 | Domain navigation and maps of content (MOCs) | `<Domain>/00 - Home/` |
 | Attachments | `97 - Assets/` |
 
-Use the existing `Tech`, `Business`, and `Social Sciences` domains. Organize narrower subjects with MOCs.
+Use the existing `Tech`, `Business`, `Social Sciences`, and `Languages` domains. Organize narrower subjects with MOCs; use a separate MOC for each language within `Languages`.
 
 ## Processing notes
 

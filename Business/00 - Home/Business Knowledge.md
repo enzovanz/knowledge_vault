@@ -1,10 +1,9 @@
-This is the starting point for business study. Business currently contains finance, management, marketing, and project management.
+This is the starting point for business study. Business currently contains finance, management, and project management.
 
 ## Fields
 
 - [[Finance MOC]]
 - [[Management MOC]]
-- [[Marketing MOC]]
 - [[Project Management MOC]]
 
 ## Knowledge notes
