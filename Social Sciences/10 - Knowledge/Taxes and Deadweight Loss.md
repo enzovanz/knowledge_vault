@@ -15,11 +15,13 @@ Some mutually beneficial trades then disappear. The government collects revenue 
 
 This cost does not prove that all taxes are undesirable. Tax revenue can finance public services or redistribution, and taxes on harmful activities can make private decisions reflect social costs. The relevant comparison is between the tax's lost gains from trade and the value of what the policy accomplishes.
 
+A corrective tax differs from a tax imposed on an otherwise efficient market. When an unpriced externality already causes too much of a harmful activity, a charge that reflects its marginal external cost can reduce the existing welfare loss. A poorly calibrated charge can still be too high or too low, but the tax is not necessarily creating the original distortion; it may be correcting one.
+
 ## Example
 
 A cappuccino costs 60p before tax. A 10% tax raises the customer price to 66p, but one customer is willing to pay at most 63p. Without the tax, the sale occurs; with it, the sale disappears. No tax is collected, and the mutually beneficial trade between 60p and 63p is lost.
 
 ## Connections
 
-- Related: [[Prices as Market Signals]], [[Economic Efficiency and Fairness]], [[Own-price elasticity of demand]]
+- Related: [[Prices as Market Signals]], [[Economic Efficiency and Fairness]], [[Own-price elasticity of demand]], [[Externalities and Their Correction]]
 - Source: [[The Undercover Economist]]

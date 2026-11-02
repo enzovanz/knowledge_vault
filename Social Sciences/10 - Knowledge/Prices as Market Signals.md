@@ -20,11 +20,13 @@ Prices also reveal only a particular kind of “truth”: what people will pay u
 
 Non-market provision changes the rationing rule rather than eliminating scarcity. A public school may allocate places by residence instead of tuition, for example. If access to a desirable school raises demand for nearby homes, part of the school's value can be capitalized into property prices. Money then flows to property owners, and access may still favor wealthier families.
 
+Prices can also communicate costs that would otherwise fall on bystanders. A congestion or pollution charge tells a decision-maker that one more trip or unit of pollution creates social harm and makes avoiding that harm personally worthwhile. For the signal to change the next decision, the charge must apply at the relevant margin rather than only through an unrelated upfront fee.
+
 ## Example
 
 Suppose many parents want places at a highly regarded free public school. Because the school cannot immediately add places, families bid up nearby housing. The house price signals that the location and school access are scarce, but the payment goes to homeowners rather than directly funding more teaching capacity.
 
 ## Connections
 
-- Related: [[Scarcity]], [[Market Institutions and Economic Power]], [[Economic Efficiency and Fairness]], [[Taxes and Deadweight Loss]]
+- Related: [[Scarcity]], [[Market Institutions and Economic Power]], [[Economic Efficiency and Fairness]], [[Taxes and Deadweight Loss]], [[Average and Marginal Prices]], [[Externalities and Their Correction]]
 - Source: [[The Undercover Economist]]

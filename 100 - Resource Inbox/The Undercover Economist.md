@@ -31,3 +31,6 @@ What do I want to learn from it?
 - [[Taxes and Deadweight Loss]]
 - [[Economic Efficiency and Fairness]]
 - [[Market Institutions and Economic Power]]
+- [[Average and Marginal Prices]]
+- [[Externalities and Their Correction]]
+- [[GDP Is Not a Measure of Welfare]]

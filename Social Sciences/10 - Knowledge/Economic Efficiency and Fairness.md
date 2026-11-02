@@ -15,11 +15,13 @@ Tim Harford's **Head Start Theorem** separates the market process from the start
 
 The result is more useful as a thought experiment than as a complete policy recipe. Governments cannot perfectly measure needs or make redistribution entirely neutral. Taxes and benefits can change behavior; political power shapes the chosen starting point; and many market failures remain. A theoretically perfect market plus a perfectly designed head start may be “as good as we can get” in the model, yet unattainable in practice.
 
+Correcting a market failure does not settle the fairness question. A congestion charge can improve efficiency by making drivers face the delays they impose on others, yet its distributional effect depends on who drives, why they drive, what alternatives they have, and how the revenue is used. It may fall mostly on higher-income drivers where lower-income travelers can walk, cycle, or use reliable public transport, but burden lower-income workers where driving long distances is unavoidable.
+
 ## Example
 
 Two runners can compete under identical rules, but calling the race fair is questionable if one starts far ahead. Moving both runners to an agreed starting line before the race preserves the competition while changing its distributional foundation. In an economy, cash, education, healthcare, or access to assets can serve as parts of that head start, though each changes incentives differently.
 
 ## Connections
 
-- Related: [[Prices as Market Signals]], [[Taxes and Deadweight Loss]], [[Market Institutions and Economic Power]]
+- Related: [[Prices as Market Signals]], [[Taxes and Deadweight Loss]], [[Market Institutions and Economic Power]], [[Externalities and Their Correction]]
 - Source: [[The Undercover Economist]]

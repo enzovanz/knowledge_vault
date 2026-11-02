@@ -22,13 +22,15 @@ Work from top to bottom and focus on only the first two or three unchecked topic
 - [[Sustainable Competitive Advantage]]
 - [[Nominal and Real Interest Rates]]
 - [[Prices as Market Signals]]
+- [[Average and Marginal Prices]]
+- [[Externalities and Their Correction]]
 - [[Taxes and Deadweight Loss]]
 - [[Economic Efficiency and Fairness]]
 - [[Market Institutions and Economic Power]]
 
 ### Core topics
 
-- [ ] Core economics topic
+- [[GDP Is Not a Measure of Welfare]]
 
 ### Advanced topics
 
