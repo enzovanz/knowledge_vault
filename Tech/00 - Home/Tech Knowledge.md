@@ -4,6 +4,7 @@ This is the starting point for technical study. Capture quickly, then improve no
 ## Fields
 
 - [[Software Engineering MOC]]
+- [[Data Structures and Algorithms MOC]]
 - [[Data Engineering MOC]]
 - [[Networking MOC]]
 
