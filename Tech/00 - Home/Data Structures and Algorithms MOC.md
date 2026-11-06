@@ -14,6 +14,10 @@ Data structures and algorithms studies how to represent information and solve co
 - [[Recursive Objects]] — recognize smaller objects of the same type and define decomposition rules and base cases.
 - [[Algorithm Analysis and Big O Notation]] — compare growth rates, distinguish cases from bounds, and estimate scalability.
 
+### Sorting
+
+- [[Sorting Algorithms]] — sorting methods with Python implementations and brief complexity analysis.
+
 ## Resources
 
 - [[The Algorithm Design Manual]] — Steven S. Skiena's book on algorithm design
