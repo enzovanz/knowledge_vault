@@ -18,3 +18,8 @@ Learn to translate application requirements into precise algorithmic problems an
 
 - [[Modeling the Problem]]
 - [[Recursive Objects]]
+- [[Algorithm Analysis and Big O Notation]]
+
+## Reading edition
+
+Currently reading the second edition (2008), chapter 2, Algorithm Analysis: [PDF](https://sureshcseit.wordpress.com/wp-content/uploads/2021/04/skienathealgorithmdesignmanual.pdf). The publisher URL above points to the third edition.

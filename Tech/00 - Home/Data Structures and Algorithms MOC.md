@@ -12,6 +12,7 @@ Data structures and algorithms studies how to represent information and solve co
 
 - [[Modeling the Problem]] — identify standard mathematical objects, constraints, and objectives before choosing an algorithm.
 - [[Recursive Objects]] — recognize smaller objects of the same type and define decomposition rules and base cases.
+- [[Algorithm Analysis and Big O Notation]] — compare growth rates, distinguish cases from bounds, and estimate scalability.
 
 ## Resources
 
