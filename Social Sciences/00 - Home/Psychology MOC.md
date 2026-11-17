@@ -26,5 +26,5 @@ When a topic becomes a developed note, keep its link in the appropriate topical 
 
 ## Resources
 
-- [[Brave New World]] — conditioning, conformity, and individual freedom in fiction.
-- [[Weapons of Math Destruction]] — bias and the social effects of automated decisions.
+- [[Brave New World]]
+- [[Weapons of Math Destruction]]

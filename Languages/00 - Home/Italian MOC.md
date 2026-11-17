@@ -19,8 +19,8 @@ Italian study develops listening, reading, speaking, and writing skills through 
 - [ ] Consolidate intermediate grammar (B1–B2).
 - [ ] Combine reading and listening with regular speaking and writing practice.
 
-## Italian resources
+## Resources
 
-- [[Una grammatica italiana per tutti 1 (A1–A2)]] — introductory grammar and exercises.
-- [[Una grammatica italiana per tutti 2 (B1–B2)]] — intermediate grammar and exercises.
-- [[Il piccolo principe]] — reading practice in Italian.
+- [[Il piccolo principe]]
+- [[Una grammatica italiana per tutti 1 (A1–A2)]]
+- [[Una grammatica italiana per tutti 2 (B1–B2)]]

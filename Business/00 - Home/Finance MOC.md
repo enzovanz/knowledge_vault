@@ -37,3 +37,9 @@ When a topic becomes a developed note, keep its link in the appropriate topical 
 ## Related fields
 
 - [[Economics MOC]] — monetary policy, macroeconomics, and financial economics
+
+## Resources
+
+- [[Rich Dad, Poor Dad]]
+- [[The Intelligent Investor]]
+- [[The Richest Man in Babylon]]

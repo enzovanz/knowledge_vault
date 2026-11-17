@@ -13,5 +13,6 @@ Move concepts you want to study later into the appropriate domain folder under `
 3. Link a source or related concept only when the connection is useful.
 4. Add the finished concept to one relevant MOC.
 5. Move a finished concept to the relevant domain's `10 - Knowledge` folder or a processed resource to its `90 - Resources` folder.
+6. Keep a final `Resources` section in every MOC with plain links to all related resource notes in the domain's `90 - Resources` folder. Add a resource only after it moves there from `100 - Resource Inbox`. Leave the section empty when no related processed resources exist.
 
 A note is done when you can understand it without reopening the original source. Do not add properties, tags, or links just to fill fields.

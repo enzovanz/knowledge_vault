@@ -37,3 +37,7 @@ Work from top to bottom and focus on only the first two or three unchecked topic
 - [ ] Data lineage
 
 When a topic becomes a developed note, keep its link in the appropriate topical section, remove the checkbox, and move the note from `99 - Concept Inbox` or `98 - Concept Backlog/Tech` to `Tech/10 - Knowledge`.
+
+## Resources
+
+- [[Fundamentals of Data Engineering - Plan and Build Robust Data Systems]]

@@ -19,6 +19,7 @@ Data structures and algorithms studies how to represent information and solve co
 - [[Contiguous Versus Linked Data Structures]] — understand how memory representation shapes access, traversal, updates, and storage overhead.
 - [[Arrays]] — use contiguous storage for direct indexed access, compact representation, and cache-friendly traversal.
 - [[Pointers]] — distinguish an address, a pointer variable, and the value obtained by dereferencing it.
+- [[Linked Lists]] — represent sequences as connected nodes and search them by following links from the head.
 
 
 ### Searching and lookup
@@ -30,5 +31,3 @@ Data structures and algorithms studies how to represent information and solve co
 - [[Sorting Algorithms]] — sorting methods with Python implementations and brief complexity analysis.
 
 ## Resources
-
-- [[The Algorithm Design Manual]] — Steven S. Skiena's book on algorithm design

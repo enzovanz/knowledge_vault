@@ -87,4 +87,5 @@ The nodes need not be adjacent in memory; their stored addresses establish the l
 
 - Related: [[Contiguous Versus Linked Data Structures]] — pointers connect the separately allocated nodes of linked structures.
 - Related: [[Arrays]] — array indexes calculate addresses implicitly, whereas pointers hold addresses explicitly.
+- Related: [[Linked Lists]] — applies pointers to connect nodes into an ordered sequence.
 - Source: [[The Algorithm Design Manual]], second edition, §3.1.2, printed pp. 68–69 (PDF pages 80–81). [Reading PDF](https://sureshcseit.wordpress.com/wp-content/uploads/2021/04/skienathealgorithmdesignmanual.pdf#page=80).
