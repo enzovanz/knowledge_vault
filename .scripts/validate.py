@@ -13,6 +13,7 @@ CHECKS = (
     ("Internal links", "check_links.py"),
     ("Note properties", "check_properties.py"),
     ("MOC coverage", "check_moc_coverage.py"),
+    ("Resource MOC coverage", "check_resource_coverage.py"),
     ("Unique note titles", "check_duplicate_titles.py"),
 )
 

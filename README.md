@@ -100,6 +100,18 @@ Inboxes, backlogs, resources, templates, and non-Markdown files are excluded.
 Uncovered notes fail CI with an error naming the note and the domain home
 folder where a MOC reference is needed.
 
+### Resource MOC coverage
+
+Every Markdown note under `<Domain>/90 - Resources/`, including subfolders,
+must have a direct reference from at least one MOC under that same domain's
+`00 - Home/` folder. The same MOC identification and link rules as concept
+coverage apply. The domain is the top-level folder, regardless of the resource's
+`domain` property. Resources in `100 - Resource Inbox` are excluded until moved
+into a domain resource folder.
+
+Missing coverage fails CI and reports the resource and required MOC folder.
+Run this check alone with `python .scripts/check_resource_coverage.py`.
+
 ### Unique note titles
 
 Every Markdown file in the visible vault must have a unique filename title
@@ -127,7 +139,7 @@ source .venv/bin/activate
 python -m pip install -r .scripts/requirements.txt
 ```
 
-Run all four checks with one command:
+Run all five checks with one command:
 
 ```sh
 make validate
@@ -136,7 +148,7 @@ make validate
 The Make target uses `.venv/bin/python` when the local virtual environment
 exists, and otherwise falls back to `python3`. The same command runs in CI.
 Each check prints a green `PASS` or red `FAIL`
-with its diagnostics, followed by an overall summary. All four checks run even
+with its diagnostics, followed by an overall summary. All five checks run even
 if one fails; the command exits with status 1 if any check fails.
 
 Colors are automatic in terminals and GitHub Actions. Redirected output is

@@ -23,11 +23,11 @@ def domain_folder(source, folder):
     return None
 
 
-def check(root, files):
+def check(root, files, folder="10 - Knowledge"):
     notes = {
-        source: domain_folder(source, "10 - Knowledge")
+        source: domain_folder(source, folder)
         for source in files
-        if source.endswith(".md") and domain_folder(source, "10 - Knowledge")
+        if source.endswith(".md") and domain_folder(source, folder)
     }
     covered = set()
     moc_count = 0
@@ -54,10 +54,10 @@ def check(root, files):
     return len(notes), moc_count, sorted(notes.keys() - covered)
 
 
-def main():
-    note_count, moc_count, uncovered = check(ROOT, inventory(ROOT))
+def main(folder="10 - Knowledge", note_label="developed notes"):
+    note_count, moc_count, uncovered = check(ROOT, inventory(ROOT), folder)
     for source in uncovered:
-        domain = domain_folder(source, "10 - Knowledge")
+        domain = domain_folder(source, folder)
         message = f"No direct reference from a {domain}/00 - Home/ MOC."
         print(f"{source}:1: {message}")
         if os.environ.get("GITHUB_ACTIONS") == "true":
@@ -66,7 +66,7 @@ def main():
                 f"{escape_annotation(message)}"
             )
     print(
-        f"Checked {note_count} developed notes against {moc_count} MOCs; "
+        f"Checked {note_count} {note_label} against {moc_count} MOCs; "
         f"{len(uncovered)} note(s) missing same-domain MOC coverage."
     )
     return 1 if uncovered else 0

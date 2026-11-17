@@ -16,13 +16,15 @@ class ValidationRunnerTests(unittest.TestCase):
             subprocess.CompletedProcess([], 1, "missing note\n::error file=Note.md::Missing\n"),
             subprocess.CompletedProcess([], 0, "valid properties\n"),
             subprocess.CompletedProcess([], 0, "covered notes\n"),
+            subprocess.CompletedProcess([], 0, "covered resources\n"),
             subprocess.CompletedProcess([], 0, "unique titles\n"),
         ]
         output = io.StringIO()
         with patch("validate.subprocess.run", side_effect=results) as run:
             with contextlib.redirect_stdout(output):
                 self.assertEqual(run_checks(True), 1)
-        self.assertEqual(run.call_count, 4)
+        self.assertEqual(run.call_count, 5)
+        self.assertIn("check_resource_coverage.py", [Path(call.args[0][1]).name for call in run.call_args_list])
         for call in run.call_args_list:
             self.assertEqual(call.args[0][0], sys.executable)
             self.assertEqual(call.kwargs["cwd"], ROOT)
@@ -30,7 +32,7 @@ class ValidationRunnerTests(unittest.TestCase):
         self.assertIn("\033[31m[FAIL] Internal links\033[0m", text)
         self.assertIn("\033[32m[PASS] Note properties\033[0m", text)
         self.assertIn("\n::error file=Note.md::Missing\n", text)
-        self.assertIn("3/4 checks passed; 1 failed.", text)
+        self.assertIn("4/5 checks passed; 1 failed.", text)
 
     def test_success_without_color(self):
         result = subprocess.CompletedProcess([], 0, "OK\n")
@@ -38,13 +40,13 @@ class ValidationRunnerTests(unittest.TestCase):
         with patch("validate.subprocess.run", return_value=result):
             with contextlib.redirect_stdout(output):
                 self.assertEqual(main(["--color", "never"]), 0)
-        self.assertIn("4/4 checks passed; 0 failed.", output.getvalue())
+        self.assertIn("5/5 checks passed; 0 failed.", output.getvalue())
         self.assertNotIn("\033", output.getvalue())
 
     def test_start_error_is_reported_and_other_checks_continue(self):
         success = subprocess.CompletedProcess([], 0, "")
         output = io.StringIO()
-        with patch("validate.subprocess.run", side_effect=[OSError("unavailable")] + [success] * 3):
+        with patch("validate.subprocess.run", side_effect=[OSError("unavailable")] + [success] * 4):
             with contextlib.redirect_stdout(output):
                 self.assertEqual(run_checks(False), 1)
         self.assertIn("Could not start check: unavailable", output.getvalue())
